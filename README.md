@@ -2,4 +2,4 @@
 
 My solutions to Leetcode problems.
 
-(zrygan's leetcode)[https://leetcode.com/u/zrygan/]
+[zrygan's leetcode](https://leetcode.com/u/zrygan/)
