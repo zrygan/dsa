@@ -1,5 +1,5 @@
 # zry-leetcode
 
-My solutions to Leetcode problems.
+My solutions to LeetCode problems.
 
-[zrygan's leetcode](https://leetcode.com/u/zrygan/)
+[zrygan's LeetCode](https://leetcode.com/u/zrygan/)
