@@ -1,5 +1,7 @@
-# Ganituen, Zhean (zrygan)
-# Solution (2) to problem 169
+"""
+    Solution (1) by Zhean Ganituen (zrygan)
+    For Leetcode #169
+"""
 
 class Solution:
     def majorityElement(self, nums: List[int]) -> int:
