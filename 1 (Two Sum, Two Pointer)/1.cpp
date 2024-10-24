@@ -4,11 +4,13 @@
 */
 
 #include <vector>
-#include <algorithm> // For std::sort
+#include <algorithm> // For sort
+
+using namespace std;
 
 class Solution {
 public:
-    std::vector<int> twoSum(std::vector<int>& nums, int target) {
+    vector<int> twoSum(vector<int>& nums, int target) {
         /*
             We can simply iterate through the loop twice
             adding the i-th + j-th element. But this is 
@@ -29,17 +31,17 @@ public:
         
         // Create an array that contains an ordered pair
         // (original index , value)
-        std::vector<std::pair<int, int>> indexed;
+        vector<pair<int, int>> indexed;
 
         for (int i = 0; i < nums.size(); ++i) {
             indexed.emplace_back(nums[i], i);
         }
 
         // sort the array
-        std::sort(indexed.begin(), indexed.end());
+        sort(indexed.begin(), indexed.end());
 
         // output array
-        std::vector<int> res;
+        vector<int> res;
 
         // initialize the two-pointers
         int start = 0;
