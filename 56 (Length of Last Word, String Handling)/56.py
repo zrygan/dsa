@@ -1,3 +1,8 @@
+"""
+    Solution by Zhean Ganituen (zrygan)
+    For Leetcode #56
+"""
+
 class Solution(object):
     def lengthOfLastWord(self, s):
         """

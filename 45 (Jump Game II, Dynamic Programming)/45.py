@@ -1,3 +1,8 @@
+"""
+    Solution by Zhean Ganituen (zrygan)
+    For Leetcode #45
+"""
+
 class Solution(object):
     def jump(self, nums):
         """
