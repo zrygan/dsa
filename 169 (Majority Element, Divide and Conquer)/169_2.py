@@ -1,5 +1,5 @@
 """
-    Solution (1) by Zhean Ganituen (zrygan)
+    Solution (2) by Zhean Ganituen (zrygan)
     For Leetcode #169
 """
 
