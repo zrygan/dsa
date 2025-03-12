@@ -1,4 +1,3 @@
-# Definition for singly-linked list.
 """
      Solution by Zhean Ganituen (zrygan)
      For Leetcode #2
