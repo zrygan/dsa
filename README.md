@@ -1,5 +1,6 @@
 # The Turing Tome (The TT)
 
-My solutions to LeetCode problems.
+A collection of algorithms, data structure implementations, and solutions to 
+algorithmic programming problem.
 
-[zrygan's LeetCode](https://leetcode.com/u/zrygan/)
+Zhean Robby Ganituen, 2025
