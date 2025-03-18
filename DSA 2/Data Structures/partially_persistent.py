@@ -47,15 +47,15 @@ class Partially_Persistent:
         self.check_number_of_fields(root_field_values)
         self.Partially_Persistent_Nodes = {}
         self.root = None
-        self.create_root_Partially_Persistent_Node(root_field_values)
+        self.make_root(root_field_values)
 
-    def create_root_Partially_Persistent_Node(
+    def make_root(
         self, root_field_values: dict
     ) -> Partially_Persistent_Node:
         self.root = Partially_Persistent_Node(self.number_of_fields, root_field_values)
         self.Partially_Persistent_Nodes.update({"root": self.root})
 
-    def create_Partially_Persistent_Node(
+    def make_node(
         self, Partially_Persistent_Node_name: str, field_name_values: dict
     ) -> None:
         self.check_number_of_fields(field_name_values)
@@ -67,7 +67,7 @@ class Partially_Persistent:
             }
         )
 
-        self.update_Partially_Persistent_Nodes()
+        self.update_node()
 
     def check_number_of_fields(self, num: int) -> bool:
         if len(num) != self.number_of_fields:
@@ -78,7 +78,7 @@ class Partially_Persistent:
                 "<number_of_fields must be == len(root_field_values)>"
             )
 
-    def read_Partially_Persistent_Node(
+    def read_node(
         self, Partially_Persistent_Node_name: str, version: int = None
     ) -> Partially_Persistent_Node:
         if version is None:
@@ -106,7 +106,7 @@ class Partially_Persistent:
             ].versions[version]
             return Partially_Persistent_Node if not None else False
 
-    def update_Partially_Persistent_Nodes(self) -> None:
+    def update_node(self) -> None:
         # iterate through every Partially_Persistent_Node in the DS
         for _, Partially_Persistent_Node in self.Partially_Persistent_Nodes.items():
 
